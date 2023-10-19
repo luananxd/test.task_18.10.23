@@ -15,14 +15,45 @@
               <source srcset="img/page-header/user-photo.jpg 2x">
               <img class="user__photo" src="img/page-header/user-photo.jpg" alt="Фотография пользователя" width="40" height="40">
             </picture>
-            <p class="user__name">
-              <span class="user__lastname">Лузан</span><br> Андрей Андреевич
-            </p>
           </div>
+          <p class="user__name">
+            <span class="user__lastname">Лузан</span><br> Андрей Андреевич
+          </p>
         </div>
         <button class="page-header__menu-button" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
+
+        <div class="page-header__menu menu">
+          <div class="menu__wrapper">
+            <div class="menu__user-photo-wrapper">
+              <picture>
+                <source srcset="img/page-header/user-photo.webp 1x,  img/page-header/user-photo.webp 2x" type="image/webp">
+                <source srcset="img/page-header/user-photo.jpg 2x">
+                <img class="menu__user-photo" src="img/page-header/user-photo.jpg" alt="Фотография пользователя" width="40" height="40">
+              </picture>
+            </div>
+            <div class="menu__information user-information">
+              <span class="user-information__aside-text">Задание выполнил</span>
+              <p class="user-information__name">
+                Лузан<br> Андрей Андреевич
+              </p>
+              <p class="user-information__about">
+                Студен первого курса магистратуры КемГУ по специальности "Управление проектами". Начинал изучать HTML и CSS самостоятельно, позже прошел курсы от HTML Academy. Сейчас продолжаю изучать JavaScript.
+              </p>
+              <a class="user-information__phone" href="+79515836315">+7 (951) 583 63-15</a>
+              <p class="user-information__social">
+                <button class="user-information__button">
+                  <span class="visually-hidden">Перейти по ссылке на соцсеть/мессенджер</span>
+                </button>
+                <a class="user-information__link" href="https://t.me/luananxd">Ссылка на соцсеть/мессенджер</a>
+              </p>
+            </div>
+            <button class="menu__button" type="button">
+              <span class="visually-hidden">Закрыть меню</span>
+            </button>
+          </div>
+        </div>
       </header>
     </div>
   </body>
