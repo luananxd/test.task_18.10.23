@@ -11,8 +11,8 @@
         <div class="page-header__user user">
           <div class="user__photo-wrapper">
             <picture>
-              <source srcset="img/page-header/user-photo.webp 1x,  img/page-header/user-photo.webp 2x" type="image/webp">
-              <source srcset="img/page-header/user-photo.jpg 2x">
+              <source srcset="img/page-header/user-photo.webp 1x,  img/page-header/user-photo@2x.webp 2x" type="image/webp">
+              <source srcset="img/page-header/user-photo@2x.jpg 2x">
               <img class="user__photo" src="img/page-header/user-photo.jpg" alt="Фотография пользователя" width="40" height="40">
             </picture>
           </div>
@@ -56,13 +56,96 @@
         </div>
       </header>
       <main class="page-content">
-        <h1 class="page-content__header">Тестовое задание</h1>
+        <h1 class="page-content__header header-h1">Тестовое задание</h1>
         <span class="page-content__level">Уровень: junior</span>
 
         <section class="introduction">
+          <h2 class="visually-hidden">Вступительное слово</h2>
           <p class="introduction__text">
             Привет! Твоё тестовое задание — грамотно заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет удобнее. В менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?
           </p>
+        </section>
+
+        <section class="grid">
+          <h2 class="grid__header header-h2">Сетка</h2>
+          <p class="grid__text">
+            Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.
+          </p>
+
+          <h3 class="grid__subheader header-h3">Десктоп (1200+)</h3>
+          <dl class="grid__parameters parameters">
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Контент</dt>
+              <dd class="parameters__describe">1072–1312</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Колонок</dt>
+              <dd class="parameters__describe">12</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Ширина колонки</dt>
+              <dd class="parameters__describe">60-80</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Межколонник</dt>
+              <dd class="parameters__describe">32</dd>
+            </div>
+          </dl>
+          <picture>
+            <source srcset="img/grid/img-desktop.webp 1x, img/grid/img-desktop@2x.webp 2x" type="img/webp">
+            <source srcset="img/grid/img-desktop@2x.png 2x">
+            <img class="grid__image" src="img/grid/img-desktop.png" alt="Схема колоночной сетки для компютера" width="904" height="480">
+          </picture>
+
+          <h3 class="grid__subheader header-h3">Планшет (736+)</h3>
+          <dl class="grid__parameters parameters">
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Контент</dt>
+              <dd class="parameters__describe">672–928</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Колонок</dt>
+              <dd class="parameters__describe">8</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Ширина колонки</dt>
+              <dd class="parameters__describe">56-88</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Межколонник</dt>
+              <dd class="parameters__describe">32</dd>
+            </div>
+          </dl>
+          <picture>
+            <source srcset="img/grid/img-tablet.webp 1x, img/grid/img-tablet@2x.webp 2x" type="img/webp">
+            <source srcset="img/grid/img-tablet@2x.png 2x">
+            <img class="grid__image" src="img/grid/img-tablet.png" alt="Схема колоночной сетки для планшета" width="904" height="480">
+          </picture>
+
+          <h3 class="grid__subheader header-h3">Телефон (320+)</h3>
+          <dl class="grid__parameters parameters">
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Контент</dt>
+              <dd class="parameters__describe">296–424</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Колонок</dt>
+              <dd class="parameters__describe">4</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Ширина колонки</dt>
+              <dd class="parameters__describe">56-88</dd>
+            </div>
+            <div class="parameters__wrapper">
+              <dt class="parameters__key">Межколонник</dt>
+              <dd class="parameters__describe">24</dd>
+            </div>
+          </dl>
+          <picture>
+            <source srcset="img/grid/img-mobile.webp 1x, img/grid/img-mobile@2x.webp 2x" type="img/webp">
+            <source srcset="img/grid/img-mobile@2x.png 2x">
+            <img class="grid__image" src="img/grid/img-mobile.png" alt="Схема колоночной сетки для смартфона" width="904" height="480">
+          </picture>
         </section>
       </main>
     </div>
