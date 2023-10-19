@@ -2,12 +2,28 @@
 <html lang="ru">
   <head>
     <meta charset="UTF-8">
-    <link rel="stylesheet" href="css/style.min.css">
+    <!-- <link rel="stylesheet" href="css/style.min.css"> -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
   </head>
   <body class="page-body">
     <div class="page-body__column-wrapper">
-
+      <header class="page-body__header page-header">
+        <div class="page-header__user user">
+          <div class="user__photo-wrapper">
+            <picture>
+              <source srcset="img/page-header/user-photo.webp 1x,  img/page-header/user-photo.webp 2x" type="image/webp">
+              <source srcset="img/page-header/user-photo.jpg 2x">
+              <img class="user__photo" src="img/page-header/user-photo.jpg" alt="Фотография пользователя" width="40" height="40">
+            </picture>
+            <p class="user__name">
+              <span class="user__lastname">Лузан</span><br> Андрей Андреевич
+            </p>
+          </div>
+        </div>
+        <button class="page-header__menu-button" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </header>
     </div>
   </body>
 </html>
