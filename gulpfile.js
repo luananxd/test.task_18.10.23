@@ -114,8 +114,11 @@ export const copy = () => {
     'source/*.ico',
     'source/img/**/*.svg',
     // 'source/manifest.webmanifest',
-    '!source/img/sprite/*.svg'
-  ]);
+  ], {
+    base: "source"
+  })
+  .pipe(gulp.dest("build"))
+  done();
 }
 
 // Очистка
