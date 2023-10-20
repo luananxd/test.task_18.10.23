@@ -1,39 +1,4 @@
+@import 'fonts.scss';
 @import 'variables.scss';
-
-*,
-*::after,
-*::before {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0 64px;
-
-  @media(max-width: $tablet-max-width) {
-    padding: 0 32px;
-  }
-
-  @media(max-width: $mobile-max-width) {
-    padding: 0 12px;
-  }
-}
-
-.page-body__column-wrapper {
-  display: grid;
-  grid-template-columns: repeat(11, 1fr 32px) 1fr;
-  grid-template-rows: 100%;
-  margin: 0 auto;
-  max-width: 1312px;
-  height: 100vh;
-
-  @media(max-width: $tablet-max-width) {
-    grid-template-columns: repeat(7, 1fr 32px) 1fr;
-    max-width: 928px;
-  }
-
-  @media(max-width: $mobile-max-width) {
-    grid-template-columns: repeat(3, 1fr 24px) 1fr;
-    max-width: 424px;
-  }
-}
+@import 'page-body.scss';
+@import 'headers.scss';
