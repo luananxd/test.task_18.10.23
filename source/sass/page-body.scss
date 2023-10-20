@@ -1,0 +1,38 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 64px;
+  font-family: 'Graphik', 'Arial', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: $adaptive-line-height;
+  color: $black;
+
+  @media(max-width: $tablet-max-width) {
+    padding: 0 32px;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    padding: 0 12px;
+  }
+}
+
+.page-body__column-wrapper {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1312px;
+
+  @media(max-width: $tablet-max-width) {
+    max-width: 928px;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    max-width: 424px;
+  }
+}

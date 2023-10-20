@@ -1,0 +1,36 @@
+.email__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.email__input {
+  font-size: 16px;
+  line-height: $adaptive-line-height;
+}
+
+.email__input--focus .email__placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.email__input--error .email__placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  color: $red;
+}
+
+.email__error {
+  display: none;
+  opacity: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $red;
+}
+
+.email.input:invalid ~ .email__error,
+.email__input--error ~ .email__error {
+  display: block;
+  opacity: 1;
+}

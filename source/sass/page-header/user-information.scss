@@ -1,0 +1,27 @@
+.user-information__aside-text {
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.user-information__name {
+  font-size: 32px;
+  line-height: $adaptive-line-height;
+  font-weight: 700;
+}
+
+.user-information__phone,
+.user-information__phone:visited
+ {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.user-information__link,
+.user-information__link:visited {
+  font-weight: 500;
+  color: $violet;
+  text-decoration: none;
+}

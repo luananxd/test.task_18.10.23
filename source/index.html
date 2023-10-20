@@ -67,11 +67,10 @@
             </li>
           </ul>
         </nav>
-        <h1 class="page-content__header header-h1">Тестовое задание</h1>
-        <span class="page-content__level">Уровень: junior</span>
 
         <section class="introduction">
-          <h2 class="visually-hidden" id="introduction">Вступительное слово</h2>
+          <h1 class="introduction__header header-h1" id="introduction">Тестовое задание</h1>
+          <span class="introduction__level">Уровень: junior</span>
           <p class="introduction__text">
             Привет! Твоё тестовое задание — грамотно заверстать эту прекрасную страничку. В шапке страницы укажи своё ФИО, так всем будет удобнее. В менюхе под иконкой бургером мы хотели бы также видеть твои данные. Ну что, поехали?
           </p>
@@ -205,7 +204,7 @@
                 </div>
               </dl>
 
-              <dl class="examples__content">
+              <dl class="examples__content examples__content--mobile">
                 <div class="examples__wrapper">
                   <dt class="examples__title">Заголовок H1, 32/40, bold</dt>
                   <dd class="examples__text header-h1">Текст заголовка</dd>
@@ -224,7 +223,7 @@
                 </div>
                 <div class="examples__wrapper">
                   <dt class="examples__title">Лид P_Lead, 20/28, regular</dt>
-                  <dd class="examples__text examples__text--lead">Крупный текст P_18, 18/28, regular</dd>
+                  <dd class="examples__text examples__text--lead">Текст лида</dd>
                 </div>
                 <div class="examples__wrapper">
                   <dt class="examples__title">Крупный текст P_18, 18/28, regular</dt>
@@ -232,7 +231,7 @@
                 </div>
                 <div class="examples__wrapper">
                   <dt class="examples__title">Основной текст P_16, 16/24, regular</dt>
-                  <dd class="examples__text examples__text--egular-text">Основной текст</dd>
+                  <dd class="examples__text examples__text--regular-text">Основной текст</dd>
                 </div>
                 <div class="examples__wrapper">
                   <dt class="examples__title">Впомогательный текст P_14, 14/20, regular</dt>
@@ -247,7 +246,7 @@
           <h2 class="ui__header header-h2" id="ui">UI</h2>
 
           <div class="ui__group email">
-            <h3 class="email__header header-h2">Текстовое поле</h3>
+            <h3 class="email__header header-h3">Текстовое поле</h3>
             <label class="email__label">
               <span class="email__placeholder">E-mail</span>
               <input class="email__input" type="email">
@@ -263,14 +262,14 @@
               <span class="email__subtitle">Ввод</span>
               <div class="email__input email__input--focus">
                 <span class="email__placeholder">E-mail</span>
-                <span class="email__placeholder">office@make.st</span>
+                <span class="email__text">office@make.st</span>
               </div>
             </div>
             <div class="email__label">
               <span class="email__subtitle">Ошибка</span>
               <div class="email__input email__input--error">
                 <span class="email__placeholder">E-mail</span>
-                <span class="email__placeholder">officemake.st</span>
+                <span class="email__text">officemake.st</span>
               </div>
               <span class="email__error">Текст ошибки</span>
             </div>
@@ -283,8 +282,8 @@
               <ul class="select__body">
                 <li class="select__item">Первый стул</li>
                 <li class="select__item">Второй стул</li>
-                <li class="select__item">Выбранный пункт</li>
-                <li class="select__item">Теорема Эскобара</li>
+                <li class="select__item select__item--current">Выбранный пункт</li>
+                <li class="select__item select__item--hover">Теорема Эскобара</li>
               </ul>
             </div>
           </div>
@@ -292,7 +291,7 @@
           <div class="ui__group buttons">
             <h3 class="buttons__header header-h3">Кнопка</h3>
             <div class="buttons__wrapper">
-              <button class="buttons__button" type="button">Отправить</button>
+              <button class="buttons__button buttons__button--real" type="button">Отправить</button>
             </div>
             <div class="buttons__wrapper">
               <span class="buttons__subtitle">Ховер</span>
@@ -341,7 +340,7 @@
             <h3 class="details__header header-h3">Аккордеон</h3>
             <div class="details__field details__field--disabled">Аккордеон</div>
             <div class="details__field details__field--hover">Аккордеон</div>
-            <details class="details__field">
+            <details class="details__field details__fiel--real">
               <summary class="details__summary">Аккордеон</summary>
               <p class="details__text">
                 Что такое осень — это небо<br>
@@ -358,7 +357,7 @@
             </details>
           </div>
         </section>
-        <p class="win-text">Победа! 😜</p>
+        <p class="page-content__win-text">Победа! 😜</p>
       </main>
     </div>
   </body>

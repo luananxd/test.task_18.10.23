@@ -1,0 +1,15 @@
+.details__field {
+  font-weight: 500;
+}
+
+.details__field--disabled {
+  color: $gray;
+}
+
+.details__field[open] .details__summary {
+  color: $violet;
+}
+
+.details__text {
+  font-weight: 400;
+}

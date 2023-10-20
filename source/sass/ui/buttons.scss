@@ -1,0 +1,28 @@
+.buttons__button {
+  font-size: 16px;
+  line-height: $adaptive-line-height;
+  color: $white;
+  background: linear-gradient(45deg, $pink 0%, $violet 100%);
+  border: none;
+}
+
+.buttons__subtitle {
+  font-size: 14px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.buttons__button--hover,
+.buttons__button--real:hover {
+  background: linear-gradient(225deg, $pink 0%, $violet 100%);
+}
+
+.buttons__button--active,
+.buttons__button--real:active {
+  background: linear-gradient(207deg, $pink 0%, $violet 100%);
+}
+
+.buttons__button--disabled,
+.buttons__button--real:disabled {
+  background: #CBCBCC;
+}
