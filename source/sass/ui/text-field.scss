@@ -1,0 +1,74 @@
+
+.text-field {
+  position: relative;
+}
+
+.text-field__placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.text-field__placeholder--active,
+.text-field__input--real:focus-visible + .text-field__placeholder {
+  top: -24px;
+  font-size: 12px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.text-field__input {
+  display: block;
+  margin: 0;
+  margin-bottom: 26px;
+  padding: 0;
+  padding-bottom: 6px;
+  width: 100%;
+  height: 32px;
+  font-size: 16px;
+  line-height: $adaptive-line-height;
+  border: none;
+  border-bottom: 2px solid #AEADAE;
+}
+
+.text-field__input--real:hover,
+.text-field__input--hover {
+  border-color: $violet;
+}
+
+.text-field__input--real:focus-visible,
+.text-field__input--focus {
+  outline: none;
+  border-bottom: 4px solid $violet;
+}
+
+.text-field__input--error {
+  border-bottom: 4px solid $red;
+}
+
+.text-field__input--focus .text-field__placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  color: $gray;
+}
+
+.text-field__input--error ~ .text-field__placeholder {
+  font-size: 12px;
+  line-height: 20px;
+  color: $red;
+}
+
+.text-field__error {
+  display: none;
+  position: absolute;
+  bottom: -6px;
+  opacity: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: $red;
+}
+
+.text-field__input--error ~ .text-field__error {
+  display: block;
+  opacity: 1;
+}

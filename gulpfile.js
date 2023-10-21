@@ -132,6 +132,7 @@ export const build = gulp.series(
   clean,
   copy,
   imageOptim,
+  copyImages,
   svgOptim,
   gulp.parallel(
     html,
@@ -144,7 +145,7 @@ export const build = gulp.series(
 export default gulp.series(
   clean,
   copy,
-  imageCopy,
+  copyImages,
   gulp.parallel(
     html,
     styles,
