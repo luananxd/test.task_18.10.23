@@ -93,10 +93,7 @@ export const createWebp = () => {
 // Копирование изображений
 
 export const imageCopy = () => {
-  return gulp.src('source/img/**/*.{jpg,png}',
-  {
-    base: "source"
-  })
+  return gulp.src('source/img/**/*.{jpg,png}')
   .pipe(gulp.dest('build/img'));
 }
 
