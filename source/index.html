@@ -265,30 +265,37 @@
           <div class="ui__group email">
             <h3 class="email__header header-h3">Текстовое поле</h3>
             <label class="email__label">
+            <div class="email__group email__group--real">
+              <input class="email__input email__input--real" type="email">
               <span class="email__placeholder">E-mail</span>
-              <input class="email__input" type="email">
               <span class="email__error">Неверный формат электронной почты</span>
+            </div>
             </label>
             <div class="email__label">
               <span class="email__subtitle">Ховер</span>
-              <div class="email__input email__input--hover">
+              <div class="email__group">
                 <span class="email__placeholder">E-mail</span>
+                <div class="email__input email__input--hover"></div>
               </div>
             </div>
             <div class="email__label">
               <span class="email__subtitle">Ввод</span>
-              <div class="email__input email__input--focus">
-                <span class="email__placeholder">E-mail</span>
-                <span class="email__text">office@make.st</span>
+              <div class="email__group">
+                <span class="email__placeholder email__placeholder--active">E-mail</span>
+                <div class="email__input email__input--focus">
+                  <span class="email__text">office@make.st</span>
+                </div>
               </div>
             </div>
             <div class="email__label">
               <span class="email__subtitle">Ошибка</span>
-              <div class="email__input email__input--error">
-                <span class="email__placeholder">E-mail</span>
-                <span class="email__text">officemake.st</span>
+              <div class="email__group">
+                <div class="email__input email__input--error">
+                  <span class="email__placeholder email__placeholder--active">E-mail</span>
+                  <span class="email__text">officemake.st</span>
+                </div>
+                <span class="email__error">Текст ошибки</span>
               </div>
-              <span class="email__error">Текст ошибки</span>
             </div>
           </div>
 
@@ -338,19 +345,18 @@
                 <span class="checkbox__text">Одеялом лоскутным на ней</span>
               </label>
             </div>
-          </div>
-
-          <div class="radio">
-            <div class="radio__label radio__label--disabled">
-              <span class="radio__text">Пластмассовый мир победил</span>
+            <div class="radio">
+              <div class="radio__label radio__label--disabled">
+                <span class="radio__text">Пластмассовый мир победил</span>
+              </div>
+              <div class="radio__label radio__label--hover">
+                <span class="radio__text">Макет оказался сильней</span>
+              </div>
+              <label class="radio__label">
+                <input class="radio__input" type="radio" name="radio-example" value="radio-example">
+                <span class="radio__text">Последний кораблик остыл</span>
+              </label>
             </div>
-            <div class="radio__label radio__label--hover">
-              <span class="radio__text">Макет оказался сильней</span>
-            </div>
-            <label class="radio__label">
-              <input class="radio__input" type="radio" name="radio-example" value="radio-example">
-              <span class="radio__text">Последний кораблик остыл</span>
-            </label>
           </div>
 
           <div class="ui__group details">

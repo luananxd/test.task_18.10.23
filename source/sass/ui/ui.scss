@@ -1,0 +1,20 @@
+.ui {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+}
+
+.ui__header {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.ui__group {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 32px;
+}

@@ -1,3 +1,9 @@
+.select__header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin: 0;
+}
+
 .select__preview {
   font-size: 16px;
   line-height: $adaptive-line-height;

@@ -1,0 +1,11 @@
+// .checkbox-and-radio {
+//   display: grid;
+//   grid-template-columns: repeat(9, 1fr);
+//   column-gap: 32px;
+// }
+
+.checkbox-and-radio__header {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin: 0;
+}
