@@ -1,4 +1,15 @@
+.user {
+  grid-column-start: 1;
+  grid-column-end: 4;
+  display: flex;
+}
+
+.user__photo {
+  margin-right: 24px;
+}
+
 .user__name {
+  margin: 0;
   font-size: 14px;
   line-height: 20px;
   color: $gray;
