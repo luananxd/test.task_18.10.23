@@ -1,0 +1,24 @@
+.typography {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  column-gap: 32px;
+}
+
+.typography__header {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin: 0;
+  margin-bottom: 24px;
+}
+
+.typography__text {
+  grid-column-start: 1;
+  grid-column-end: 7;
+  margin: 0;
+  margin-bottom: 48px;
+}
+
+.typography__examples {
+  grid-column-start: 1;
+  grid-column-end: -1;
+}
