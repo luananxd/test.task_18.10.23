@@ -10,7 +10,7 @@
 }
 
 .text-field__placeholder--active,
-.text-field__input--real:focus-visible + .text-field__placeholder {
+.text-field__input:focus-visible + .text-field__placeholder {
   top: -24px;
   font-size: 12px;
   line-height: 20px;
@@ -20,7 +20,6 @@
 .text-field__input {
   display: block;
   margin: 0;
-  margin-bottom: 26px;
   padding: 0;
   padding-bottom: 6px;
   width: 100%;
@@ -28,22 +27,22 @@
   font-size: 16px;
   line-height: $adaptive-line-height;
   border: none;
-  border-bottom: 2px solid #AEADAE;
+  box-shadow: 0 2px 0 0 #AEADAE;
 }
 
-.text-field__input--real:hover,
+.text-field__input:hover,
 .text-field__input--hover {
-  border-color: $violet;
+  box-shadow: 0 2px 0 0 $violet;
 }
 
-.text-field__input--real:focus-visible,
+.text-field__input:focus-visible,
 .text-field__input--focus {
   outline: none;
-  border-bottom: 4px solid $violet;
+  box-shadow: 0 4px 0 0 $violet;
 }
 
 .text-field__input--error {
-  border-bottom: 4px solid $red;
+  box-shadow: 0 4px 0 0 $red;
 }
 
 .text-field__input--focus .text-field__placeholder {
@@ -61,7 +60,7 @@
 .text-field__error {
   display: none;
   position: absolute;
-  bottom: -6px;
+  bottom: -26px;
   opacity: 0;
   font-size: 14px;
   line-height: 20px;

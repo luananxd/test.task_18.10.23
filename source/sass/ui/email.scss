@@ -1,6 +1,6 @@
 .email {
   margin: 0;
-  margin-bottom: 64px;
+  margin-bottom: 42px;
 }
 
 .email__header {
@@ -19,11 +19,16 @@
   color: $gray;
 }
 
-.email__group--real {
-  margin-top: auto;
-}
-
 .email__label {
   display: flex;
   flex-direction: column;
+  margin-bottom: 48px;
+}
+
+.email__label:not(:first-of-type) {
+  pointer-events: none;
+}
+
+.email__label:first-of-type .email__group {
+  margin-top: auto;
 }
