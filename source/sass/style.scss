@@ -4,6 +4,7 @@
 @import 'headers.scss';
 
 @import 'page-header/page-header.scss';
+@import 'page-header/menu.scss';
 @import 'page-header/user.scss';
 @import 'page-header/user-information.scss';
 
@@ -18,3 +19,16 @@
 @import 'ui/select.scss';
 @import 'ui/buttons.scss';
 @import 'ui/details.scss';
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  border: 0;
+  padding: 0;
+  margin: -1px;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}

@@ -1,26 +1,39 @@
-.user-information__aside-text {
-  font-size: 14px;
-  line-height: 20px;
-  color: $gray;
+.user-information {
+  display: flex;
+  flex-direction: column;
 }
 
 .user-information__name {
+  margin: 0;
+  margin-bottom: 24px;
   font-size: 32px;
   line-height: $adaptive-line-height;
   font-weight: 700;
 }
 
-.user-information__phone,
-.user-information__phone:visited
+.user-information__about {
+  margin: 0;
+  margin-bottom: 32px;
+}
+
+.user-information__phone
  {
+  display: block;
+  margin-bottom: auto;
+  width: 300px;
   font-size: 18px;
   line-height: 28px;
   font-weight: 500;
   text-decoration: none;
 }
 
+.user-information__phone:visited {
+  color: $black;
+}
+
 .user-information__link,
 .user-information__link:visited {
+  display: block;
   font-weight: 500;
   color: $violet;
   text-decoration: none;

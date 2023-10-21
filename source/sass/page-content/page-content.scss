@@ -1,3 +1,8 @@
+.page-content {
+  grid-column-start: 4;
+  grid-column-end: -1;
+}
+
 .page-content__win-text {
   font-size: 14px;
   line-height: 20px;

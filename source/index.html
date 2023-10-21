@@ -25,16 +25,19 @@
         </button>
 
         <div class="page-header__menu menu">
-          <div class="menu__wrapper">
-            <div class="menu__user-photo-wrapper">
-              <picture>
-                <source srcset="img/page-header/user-photo.webp 1x,  img/page-header/user-photo.webp 2x" type="image/webp">
-                <source srcset="img/page-header/user-photo.jpg 2x">
-                <img class="menu__user-photo" src="img/page-header/user-photo.jpg" alt="Фотография пользователя" width="40" height="40">
-              </picture>
+          <div class="menu__grid-wrapper">
+            <div class="menu__back"></div>
+            <div class="menu__user-container">
+              <div class="menu__user-photo-wrapper">
+                <picture>
+                  <source srcset="img/page-header/user-photo.webp 1x,  img/page-header/user-photo.webp 2x" type="image/webp">
+                  <source srcset="img/page-header/user-photo.jpg 2x">
+                  <img class="menu__user-photo" src="img/page-header/user-photo.jpg" alt="Фотография пользователя" width="40" height="40">
+                </picture>
+              </div>
+              <span class="menu__aside-text">Задание выполнил</span>
             </div>
             <div class="menu__information user-information">
-              <span class="user-information__aside-text">Задание выполнил</span>
               <p class="user-information__name">
                 Лузан<br> Андрей Андреевич
               </p>
@@ -42,32 +45,37 @@
                 Студен первого курса магистратуры КемГУ по специальности "Управление проектами". Начинал изучать HTML и CSS самостоятельно, позже прошел курсы от HTML Academy. Сейчас продолжаю изучать JavaScript.
               </p>
               <a class="user-information__phone" href="+79515836315">+7 (951) 583 63-15</a>
+              <div class="user-information__social">
+
+              </div>
               <a class="user-information__link" href="https://t.me/luananxd">Ссылка на соцсеть/мессенджер</a>
             </div>
             <button class="menu__button" type="button">
+              <svg class="menu__icon menu__icon--close" width="20" height="20">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
               <span class="visually-hidden">Закрыть меню</span>
             </button>
           </div>
         </div>
       </header>
+      <nav class="page-content__navigation navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#introduction">Напутственное слово</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#grid">Сетка</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#typography">Типографика</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#ui">UI</a>
+          </li>
+        </ul>
+      </nav>
       <main class="page-content">
-        <nav class="page-content__navigation navigation">
-          <ul class="navigation__list">
-            <li class="navigation__item">
-              <a class="navigation__link" href="#introduction">Напутственное слово</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#grid">Сетка</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#typography">Типографика</a>
-            </li>
-            <li class="navigation__item">
-              <a class="navigation__link" href="#ui">UI</a>
-            </li>
-          </ul>
-        </nav>
-
         <section class="introduction">
           <h1 class="introduction__header header-h1" id="introduction">Тестовое задание</h1>
           <span class="introduction__level">Уровень: junior</span>
