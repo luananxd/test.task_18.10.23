@@ -1,9 +1,18 @@
+.parameters {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 32px;
+}
+
 .parameters__key {
+  margin: 0;
+  margin-bottom: 8px;
   font-size: 14px;
   line-height: 20px;
   color: $gray;
 }
 
 .parameters__describe {
+  margin: 0;
   font-size: 24px;
 }
