@@ -301,13 +301,26 @@
 
           <div class="ui__group select">
             <h3 class="select__header header-h3">Выпадающий список</h3>
-            <div class="select__wrapper">
-              <input class="select__preview" type="text" value="Выберите что-нибудь">
-              <ul class="select__body">
-                <li class="select__item">Первый стул</li>
-                <li class="select__item">Второй стул</li>
-                <li class="select__item select__item--current">Выбранный пункт</li>
-                <li class="select__item select__item--hover">Теорема Эскобара</li>
+            <p class="select__text">Компонент состоит из текстового поля и выпадающей подсказки</p>
+            <div class="select__input custom-select">
+              <input class="custom-select__preview" type="text" value="Выберите что-нибудь" readonly>
+              <ul class="custom-select__body">
+                <li class="custom-select__item">Первый стул</li>
+                <li class="custom-select__item">Второй стул</li>
+                <li class="custom-select__item">Выбранный пункт</li>
+                <li class="custom-select__item">Теорема Эскобара</li>
+              </ul>
+            </div>
+            <div class="select__input custom-select">
+              <div class="custom-select__preview custom-select__preview--hover">Выберите что-нибудь</div>
+            </div>
+            <div class="select__input custom-select custom-select--open">
+              <div class="custom-select__preview custom-select__preview--active">Выберите что-нибудь</div>
+              <ul class="custom-select__body">
+                <li class="custom-select__item">Первый стул</li>
+                <li class="custom-select__item">Второй стул</li>
+                <li class="custom-select__item custom-select__item--current">Выбранный пункт</li>
+                <li class="custom-select__item custom-select__item--hover">Теорема Эскобара</li>
               </ul>
             </div>
           </div>

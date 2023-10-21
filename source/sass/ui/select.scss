@@ -2,18 +2,16 @@
   grid-column-start: 1;
   grid-column-end: -1;
   margin: 0;
+  margin-bottom: 24px;
 }
 
-.select__preview {
-  font-size: 16px;
-  line-height: $adaptive-line-height;
+.select__text {
+  grid-column-start: 1;
+  grid-column-end: -1;
+  margin: 0;
+  margin-bottom: 48px;
 }
 
-.select__item--current {
-  color: $violet;
-}
-
-.select__item--hover {
-  color: $white;
-  background-color: $violet;
+.select__input {
+  margin-bottom: 234px;
 }

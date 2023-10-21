@@ -19,11 +19,13 @@
 @import 'typography/examples.scss';
 @import 'ui/ui.scss';
 @import 'ui/email.scss';
-@import 'ui/text-field.scss';
 @import 'ui/select.scss';
 @import 'ui/checkbox-and-radio.scss';
 @import 'ui/buttons.scss';
 @import 'ui/details.scss';
+
+@import 'elements/text-field.scss';
+@import 'elements/custom-select.scss';
 
 .visually-hidden {
   position: absolute;
