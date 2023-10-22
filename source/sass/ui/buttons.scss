@@ -2,33 +2,31 @@
   grid-column-start: 1;
   grid-column-end: -1;
   margin: 0;
+  margin-bottom: 32px;
 }
 
-.buttons__button {
-  font-size: 16px;
-  line-height: $adaptive-line-height;
-  color: $white;
-  background: linear-gradient(45deg, $pink 0%, $violet 100%);
-  border: none;
+.buttons {
+  margin-bottom: 32px;
+}
+
+.buttons__wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+}
+
+.buttons__wrapper:first-of-type .buttons__button {
+  margin-top: auto;
+}
+
+.buttons__wrapper:not(:first-of-type) .buttons__button {
+  pointer-events: none;
 }
 
 .buttons__subtitle {
+  display: block;
+  margin-bottom: 24px;
   font-size: 14px;
   line-height: 20px;
   color: $gray;
-}
-
-.buttons__button--hover,
-.buttons__button--real:hover {
-  background: linear-gradient(225deg, $pink 0%, $violet 100%);
-}
-
-.buttons__button--active,
-.buttons__button--real:active {
-  background: linear-gradient(207deg, $pink 0%, $violet 100%);
-}
-
-.buttons__button--disabled,
-.buttons__button--real:disabled {
-  background: #CBCBCC;
 }
