@@ -262,7 +262,7 @@
         <section class="ui">
           <h2 class="ui__header header-h2" id="ui">UI</h2>
 
-          <div class="ui__group email">
+          <div class="ui__group">
             <h3 class="email__header header-h3">Текстовое поле</h3>
             <label class="email__label">
             <div class="email__group email__group--real text-field">
@@ -328,57 +328,62 @@
           <div class="ui__group buttons">
             <h3 class="buttons__header header-h3">Кнопка</h3>
             <div class="buttons__wrapper">
-              <button class="buttons__button buttons__button--real" type="button">Отправить</button>
+              <button class="buttons__button button" type="button">Отправить</button>
             </div>
             <div class="buttons__wrapper">
               <span class="buttons__subtitle">Ховер</span>
-              <span class="buttons__button buttons__button--hover">Отправить</span>
+              <span class="buttons__button button button__button--hover">Отправить</span>
             </div>
             <div class="buttons__wrapper">
               <span class="buttons__subtitle">Нажатие</span>
-              <span class="buttons__button buttons__button--active">Отправить</span>
+              <span class="buttons__button button button--active">Отправить</span>
             </div>
             <div class="buttons__wrapper">
               <span class="buttons__subtitle">Неактивна</span>
-              <span class="buttons__button buttons__button--disabled">Отправить</span>
+              <span class="buttons__button button button--disabled">Отправить</span>
             </div>
           </div>
 
           <div class="ui__group checkbox-and-radio">
             <h3 class="checkbox-and-radio__header header-h3">Чекбокс, радиобаттон</h3>
-            <div class="checkbox">
-              <div class="checkbox__label checkbox__label--disabled">
-                <span class="checkbox__text">Белый снег, серый лёд</span>
+            <div class="checkbox-and-radio__group checkbox-and-radio__group--checkbox">
+              <div class="custom-checkbox">
+                <span class="custom-checkbox__text">Белый снег, серый лёд</span>
               </div>
-              <div class="checkbox__label checkbox__label--hover">
-                <span class="checkbox__text">На растрескавшейся земле.</span>
+              <div class="custom-checkbox custom-checkbox--hover">
+                <span class="custom-checkbox__text">На растрескавшейся земле</span>
               </div>
-              <label class="checkbox__label">
-                <input class="checkbox__input" type="checkbox" name="checkbox-example" value="checkbox-example">
-                <span class="checkbox__text">Одеялом лоскутным на ней</span>
+              <label class="custom-checkbox">
+                <input class="custom-checkbox__input visually-hidden" type="checkbox" name="checkbox-example" value="checkbox-example" checked>
+                <span class="custom-checkbox__text">Одеялом лоскутным на ней</span>
               </label>
             </div>
-            <div class="radio">
-              <div class="radio__label radio__label--disabled">
-                <span class="radio__text">Пластмассовый мир победил</span>
+
+            <div class="checkbox-and-radio__group checkbox-and-radio__group--radio">
+              <div class="custom-radio">
+                <span class="custom-radio__text">Пластмассовый мир победил</span>
               </div>
-              <div class="radio__label radio__label--hover">
-                <span class="radio__text">Макет оказался сильней</span>
+              <div class="custom-radio custom-radio--hover">
+                <span class="custom-radio__text">Макет оказался сильней</span>
               </div>
-              <label class="radio__label">
-                <input class="radio__input" type="radio" name="radio-example" value="radio-example">
-                <span class="radio__text">Последний кораблик остыл</span>
+              <label class="custom-radio">
+                <input class="custom-radio__input visually-hidden" type="radio" name="radio-example" value="radio-example" checked>
+                <span class="custom-radio__text">Последний кораблик остыл</span>
               </label>
             </div>
           </div>
 
           <div class="ui__group details">
             <h3 class="details__header header-h3">Аккордеон</h3>
-            <div class="details__field details__field--disabled">Аккордеон</div>
-            <div class="details__field details__field--hover">Аккордеон</div>
-            <details class="details__field details__fiel--real">
+            <div class="details__field details-field details-field--disabled">
+              <span class="details__summary">Аккордеон</span>
+            </div>
+            <div class="details__field details-field details-field--hover">
+              <span class="details__summary">Аккордеон</span>
+            </div>
+            <details class="details__field details-field">
               <summary class="details__summary">Аккордеон</summary>
-              <p class="details__text">
+              <p class="details-field__text">
                 Что такое осень — это небо<br>
                 Плачущее небо под ногами<br>
                 В лужах разлетаются птицы с облаками<br>
