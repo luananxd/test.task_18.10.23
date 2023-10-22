@@ -26,9 +26,20 @@
 .checkbox-and-radio__group--checkbox {
   grid-column-start: 1;
   grid-column-end: 4;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -2;
+    margin-bottom: 40px;
+  }
 }
 
 .checkbox-and-radio__group--radio {
   grid-column-start: 5;
   grid-column-end: 8;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -2;
+  }
 }

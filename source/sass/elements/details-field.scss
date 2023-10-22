@@ -2,6 +2,8 @@
 .details-field {
   position: relative;
   box-shadow: 0 2px 0 0 #CBCBCC;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .details-field::after {
@@ -12,10 +14,14 @@
   width: 9px;
   height: 6px;
   background-image: url('../img/icons/arrow.svg');
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .details-field[open]::after {
   transform: rotate(180deg);
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .details-field:not(:last-of-type) {
@@ -25,6 +31,8 @@
 .details-field:hover,
 .details-field--hover {
   box-shadow: 0 2px 0 0 $violet;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .details-field--disabled {
@@ -33,10 +41,14 @@
 
 .details-field[open] {
   box-shadow: 0 4px 0 0 $violet;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .details-field[open] .details__summary {
   color: $violet;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .details__summary {

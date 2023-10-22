@@ -17,6 +17,7 @@
   line-height: $adaptive-line-height;
   border: none;
   box-shadow: 0 2px 0 0 $light-gray;
+  overflow: hidden;
   transition-duration: 100ms;
   transition-timing-function: ease-in;
 }

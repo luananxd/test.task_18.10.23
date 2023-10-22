@@ -1,8 +1,24 @@
 .navigation {
   grid-column-start: 1;
   grid-column-end: 4;
-  position: fixed;
+  position: absolute;
   top: 280px;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+    position: static;
+  }
+}
+
+.navigation--scroll {
+  position: fixed;
+  top: 140px;
 }
 
 .navigation__list {

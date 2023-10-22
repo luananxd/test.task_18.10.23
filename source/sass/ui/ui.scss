@@ -2,7 +2,15 @@
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   column-gap: 32px;
-  margin-bottom: 164px;
+  margin-bottom: 140px;
+
+  @media(max-width: $tablet-max-width) {
+    margin-bottom: 80px;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    column-gap: 24px;
+  }
 }
 
 .ui__header {
@@ -10,6 +18,15 @@
   grid-column-end: 7;
   margin: 0;
   margin-bottom: 48px;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .ui__group {

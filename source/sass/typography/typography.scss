@@ -2,6 +2,11 @@
   display: grid;
   grid-template-columns: repeat(9, 1fr);
   column-gap: 32px;
+
+  @media(max-width: $mobile-max-width) {
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 24px;
+  }
 }
 
 .typography__header {
@@ -9,6 +14,11 @@
   grid-column-end: 7;
   margin: 0;
   margin-bottom: 24px;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 .typography__text {
@@ -16,6 +26,15 @@
   grid-column-end: 7;
   margin: 0;
   margin-bottom: 48px;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .typography__examples {

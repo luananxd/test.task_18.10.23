@@ -8,6 +8,10 @@
   grid-column-end: -1;
   margin: 0;
   margin-bottom: 32px;
+
+  @media(max-width: $tablet-max-width) {
+    margin-bottom: 40px;
+  }
 }
 
 .email__subtitle {
@@ -17,12 +21,26 @@
   font-size: 14px;
   line-height: 20px;
   color: $gray;
+
+  @media(max-width: $tablet-max-width) {
+    margin-bottom: 28px;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    margin-bottom: 32px;
+  }
 }
 
 .email__label {
   display: flex;
   flex-direction: column;
   margin-bottom: 48px;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    margin-bottom: 32px;
+  }
 }
 
 .email__label:not(:first-of-type) {

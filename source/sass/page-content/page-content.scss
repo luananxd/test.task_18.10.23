@@ -1,6 +1,16 @@
 .page-content {
   grid-column-start: 4;
   grid-column-end: -1;
+
+  @media(max-width: $tablet-max-width) {
+    grid-column-start: 3;
+    grid-column-end: -1;
+  }
+
+  @media(max-width: $mobile-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 .page-content__win-text {

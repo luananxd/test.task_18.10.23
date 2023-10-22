@@ -9,9 +9,18 @@
   margin-bottom: 64px;
   font-size: 24px;
   line-height: $adaptive-line-height;
+
+  @media(max-width: $mobile-max-width) {
+    font-size: 20px;
+    margin-bottom: 40px;
+  }
 }
 
 .introduction__text {
   margin: 0;
   margin-bottom: 80px;
+
+  @media(max-width: $mobile-max-width) {
+    margin-bottom: 60px;
+  }
 }

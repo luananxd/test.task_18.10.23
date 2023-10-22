@@ -34,9 +34,12 @@ body {
 
   @media(max-width: $tablet-max-width) {
     max-width: 928px;
+    grid-template-columns: repeat(8, 1fr);
   }
 
   @media(max-width: $mobile-max-width) {
     max-width: 424px;
+    grid-template-columns: repeat(8, 1fr);
+    column-gap: 24px;
   }
 }

@@ -13,6 +13,11 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+
+  @media(max-width: $mobile-max-width) {
+    grid-column-start: 1;
+    grid-column-end: -1;
+  }
 }
 
 .buttons__wrapper:first-of-type .buttons__button {
