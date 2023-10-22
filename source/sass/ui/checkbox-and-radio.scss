@@ -1,11 +1,34 @@
-// .checkbox-and-radio {
-//   display: grid;
-//   grid-template-columns: repeat(9, 1fr);
-//   column-gap: 32px;
-// }
+.checkbox-and-radio {
+  display: grid;
+  grid-template-columns: repeat(9, 1fr);
+  column-gap: 32px;
+  margin-bottom: 64px;
+}
 
 .checkbox-and-radio__header {
   grid-column-start: 1;
   grid-column-end: -1;
   margin: 0;
+  margin-bottom: 32px;
+}
+
+.checkbox-and-radio__group {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+
+.checkbox-and-radio__group .custom-checkbox:not(:last-of-type),
+.checkbox-and-radio__group .custom-radio:not(:last-of-type) {
+  pointer-events: none;
+}
+
+.checkbox-and-radio__group--checkbox {
+  grid-column-start: 1;
+  grid-column-end: 4;
+}
+
+.checkbox-and-radio__group--radio {
+  grid-column-start: 5;
+  grid-column-end: 8;
 }
