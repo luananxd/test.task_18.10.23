@@ -1,0 +1,53 @@
+
+.details-field {
+  position: relative;
+  box-shadow: 0 2px 0 0 #CBCBCC;
+}
+
+.details-field::after {
+  content: '';
+  position: absolute;
+  top: 9px;
+  right: 0;
+  width: 9px;
+  height: 6px;
+  background-image: url('../img/icons/arrow.svg');
+}
+
+.details-field[open]::after {
+  transform: rotate(180deg);
+}
+
+.details-field:not(:last-of-type) {
+  pointer-events: none;
+}
+
+.details-field:hover,
+.details-field--hover {
+  box-shadow: 0 2px 0 0 $violet;
+}
+
+.details-field--disabled {
+  color: $gray;
+}
+
+.details-field[open] {
+  box-shadow: 0 4px 0 0 $violet;
+}
+
+.details-field[open] .details__summary {
+  color: $violet;
+}
+
+.details__summary {
+  display: block;
+  padding-bottom: 15px;
+  font-weight: 500;
+  list-style-type: none;
+}
+
+.details-field__text {
+  margin: 0;
+  padding-top: 9px;
+  padding-bottom: 30px;
+}
