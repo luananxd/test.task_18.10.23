@@ -27,22 +27,30 @@
   font-size: 16px;
   line-height: $adaptive-line-height;
   border: none;
-  box-shadow: 0 2px 0 0 #AEADAE;
+  box-shadow: 0 2px 0 0 $light-gray;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .text-field__input:hover,
 .text-field__input--hover {
   box-shadow: 0 2px 0 0 $violet;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .text-field__input:focus-visible,
 .text-field__input--focus {
   outline: none;
   box-shadow: 0 4px 0 0 $violet;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .text-field__input--error {
   box-shadow: 0 4px 0 0 $red;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
 }
 
 .text-field__input--focus .text-field__placeholder {
