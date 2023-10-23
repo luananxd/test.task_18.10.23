@@ -65,21 +65,21 @@
       <nav class="page-content__navigation navigation">
         <ul class="navigation__list">
           <li class="navigation__item">
-            <a class="navigation__link" href="#introduction">Напутственное слово</a>
+            <a class="navigation__link" href="#introduction" data-section="intro">Напутственное слово</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#grid">Сетка</a>
+            <a class="navigation__link" href="#grid" data-section="grid">Сетка</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#typography">Типографика</a>
+            <a class="navigation__link" href="#typography" data-section="typography">Типографика</a>
           </li>
           <li class="navigation__item">
-            <a class="navigation__link" href="#ui">UI</a>
+            <a class="navigation__link" href="#ui" data-section="ui">UI</a>
           </li>
         </ul>
       </nav>
       <main class="page-content">
-        <section class="introduction">
+        <section class="introduction" data-section="intro">
           <h1 class="introduction__header header-h1" id="introduction">Тестовое задание</h1>
           <span class="introduction__level">Уровень: junior</span>
           <p class="introduction__text">
@@ -87,7 +87,7 @@
           </p>
         </section>
 
-        <section class="grid">
+        <section class="grid" data-section="grid">
           <h2 class="grid__header header-h2" id="grid">Сетка</h2>
           <p class="grid__text">
             Задание предполагает адаптивную вёрстку. Используется 3 состояния в зависимости от устройства. Сетка «резиновая» — переменной ширины.
@@ -175,7 +175,7 @@
           </div>
         </section>
 
-        <section class="typography">
+        <section class="typography" data-section="typography">
           <h2 class="typography__header header-h2" id="typography">Типографика</h2>
           <p class="typography__text">
             Используется шрифт Graphik. На телефонах стили типографики переопределяются
@@ -259,14 +259,14 @@
           </div>
         </section>
 
-        <section class="ui">
+        <section class="ui" data-section="ui">
           <h2 class="ui__header header-h2" id="ui">UI</h2>
 
           <div class="ui__group email">
             <h3 class="email__header header-h3">Текстовое поле</h3>
             <label class="email__label">
               <div class="email__group email__group--real text-field">
-                <input class="text-field__input text-field__input--real" type="email">
+                <input class="text-field__input" type="email">
                 <span class="text-field__placeholder">E-mail</span>
                 <span class="text-field__error">Неверный формат электронной почты</span>
               </div>
@@ -401,5 +401,13 @@
       </main>
       <p class="page-content__win-text">Победа! 😜</p>
     </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/navigation.min.js" type="module"></script>
+    <script src="js/menu.min.js" type="module"></script>
+    <script src="js/select.min.js" type="module"></script>
+    <script src="js/util.min.js" type="module"></script>
+    <script src="js/tabs.min.js" type="module"></script>
+    <script src="js/text-field.min.js" type="module"></script>
   </body>
 </html>
