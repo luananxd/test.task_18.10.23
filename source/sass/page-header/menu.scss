@@ -1,8 +1,10 @@
 .menu {
+  display: none;
   position: fixed;
-  top: 0;
+  top: -100vh;
   left: 0;
   right: 0;
+  z-index: 2;
   padding: 8px 64px;
   padding-bottom: 51px;
   height: 100vh;
@@ -11,7 +13,20 @@
   background-position: center center;
   background-size: cover;
   background-color: #166466;
-  display: none;
+}
+
+.menu--open {
+  animation-name: openMenu;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
+}
+
+.menu--close {
+  animation-name: closeMenu;
+  animation-duration: 300ms;
+  animation-timing-function: ease-in;
+  animation-fill-mode: forwards;
 }
 
 .menu__grid-wrapper {
@@ -64,12 +79,61 @@
 }
 
 .menu__button {
-  position: absolute;
-  top: 36px;
-  right: 71px;
+  grid-column-start: -2;
+  grid-column-end: -1;
+  margin-top: 36px;
+  margin-left: auto;
+  padding: 0;
   width: 20px;
   height: 20px;
   background-color: transparent;
   border: none;
   cursor: pointer;
+}
+
+.menu__button:hover {
+  opacity: 0.5;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
+}
+
+.menu__button:active {
+  opacity: 0.8;
+}
+
+@keyframes openMenu {
+  0% {
+    display: none;
+    opacity: 0;
+    top: -100vh;
+  }
+
+  1% {
+    display: block;
+    opacity: 0;
+    top: -100vh;
+  }
+
+  100% {
+    opacity: 1;
+    top: 0;
+  }
+}
+
+@keyframes closeMenu {
+  0% {
+    display: block;
+    opacity: 1;
+    top: 0;
+  }
+
+  99% {
+    display: block;
+    opacity: 0;
+    top: -100vh;
+  }
+
+  100% {
+    display: none;
+  }
 }

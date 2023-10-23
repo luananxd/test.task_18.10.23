@@ -22,4 +22,17 @@
   height: 32px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
+}
+
+.page-header__menu-button:hover {
+  opacity: 0.5;
+  transition-duration: 100ms;
+  transition-timing-function: ease-in;
+}
+
+.page-header__menu-button:active {
+  opacity: 0.8;
 }
