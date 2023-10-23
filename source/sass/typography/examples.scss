@@ -18,6 +18,10 @@
   border: none;
 }
 
+.examples__tab:hover {
+  color: $violet;
+}
+
 .examples__tab--current::after {
   content: "";
   position: absolute;
