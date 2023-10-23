@@ -31,6 +31,16 @@
 @import 'elements/custom-checkbox.scss';
 @import 'elements/custom-radio.scss';
 
+html {
+  scroll-behavior: smooth;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
