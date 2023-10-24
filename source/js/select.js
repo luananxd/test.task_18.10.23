@@ -1,3 +1,5 @@
+import { chooseClickedElement } from "./util.min.js";
+
 const select = document.querySelector('.custom-select');
 const selectPlaceholder = document.querySelector('.custom-select__preview');
 const selectItems = document.querySelectorAll('.custom-select__item');
@@ -13,11 +15,8 @@ document.addEventListener('click', function(event) {
 });
 
 selectItems.forEach((item) => {
-  item.addEventListener('click', () => {
-    selectItems.forEach(item => {
-      item.classList.remove('custom-select__item--current');
-    });
-    item.classList.add('custom-select__item--current');
+  item.addEventListener('click', (e) => {
+    chooseClickedElement(selectItems, e.target, 'custom-select__item--current');
     selectPlaceholder.setAttribute('value', item.textContent);
   })
   select.classList.remove('custom-select--open');
