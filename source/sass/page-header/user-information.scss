@@ -31,10 +31,59 @@
   color: $black;
 }
 
-.user-information__link,
-.user-information__link:visited {
-  display: block;
+.user-information__social {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
+}
+
+.user-information__link {
+  display: flex;
+  column-gap: 24px;
+  align-items: center;
   font-weight: 500;
   color: $violet;
   text-decoration: none;
+}
+
+.user-information__link:visited {
+  color: $violet;
+}
+
+.user-information__link:hover {
+  color: $black;
+}
+
+.user-information__link:active {
+  opacity: 0.7;
+}
+
+.user-information__button {
+  display: block;
+  position: relative;
+  width: 48px;
+  height: 48px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.08);
+  border-radius: 50%;
+}
+
+.user-information__link:active .user-information__button {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.16);
+}
+
+.user-information__icon {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  fill: $violet
+}
+
+.user-information__link:hover .user-information__icon {
+  fill: $black;
+}
+
+.user-information__link:active .user-information__icon {
+  opacity: 0.7;
+  fill: $black;
 }
