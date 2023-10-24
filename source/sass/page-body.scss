@@ -33,7 +33,7 @@ body {
 
   @media(max-width: $mobile-max-width) {
     max-width: 424px;
-    grid-template-columns: repeat(8, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     column-gap: 24px;
   }
 }
