@@ -1,6 +1,9 @@
+import { markCurrentSection } from "./util.min.js";
+
 const navigation = document.querySelector('.navigation');
-const sections = document.querySelectorAll('section');
-const items = document.querySelectorAll('.navigation__link');
+const pageSections = document.querySelectorAll('section');
+const navigationLinks = document.querySelectorAll('.navigation__link');
+const navigationButton = document.querySelector('.navigation__button');
 
 
 function makeStickyNavigation() {
@@ -11,19 +14,27 @@ function makeStickyNavigation() {
   }
 }
 
-function changeCurrentItem() {
-  sections.forEach(section => {
-    if (window.scrollY >= section.offsetTop) {
-      items.forEach(item => {
-        item.classList.remove('navigation__link--current');
-        if(item.dataset.section === section.dataset.section) {
-          item.classList.add('navigation__link--current');
-        }
-      })
+function changeCurrentLink() {
+  pageSections.forEach(section => {
+    if (window.scrollY >= section.offsetTop && window.innerWidth > 736) {
+      markCurrentSection(section, navigationLinks, 'navigation__link--current')
     }
   });
 }
 
+function showNavigationButton() {
+  if(window.scrollY >= 160 && window.innerWidth < 736) {
+    navigationButton.classList.add('navigation__button--visible');
+  } else {
+    navigationButton.classList.remove('navigation__button--visible');
+  }
+}
+
 window.addEventListener('scroll', makeStickyNavigation);
-window.addEventListener('scroll', changeCurrentItem);
+window.addEventListener('scroll', changeCurrentLink);
+window.addEventListener('scroll', showNavigationButton);
+navigationButton.addEventListener('click', () => {
+  window.scrollTo(0, 0);
+});
+
 
